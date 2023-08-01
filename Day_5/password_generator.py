@@ -7,16 +7,16 @@ print("Welcome to the S&S Password Generator!")
 nr_letters= int(input("How many letters would you like in your password?\n")) 
 nr_symbols = int(input(f"How many symbols would you like?\n"))
 nr_numbers = int(input(f"How many numbers would you like?\n"))
-
-# le_l = random.sample(letters, nr_letters)
-# le_n = random.sample(numbers, nr_numbers)
-# le_s = random.sample(symbols, nr_symbols)
+#Asif bhaiya:
+# le_l = random.choices(letters, nr_letters)
+# le_n = random.choices(numbers, nr_numbers)
+# le_s = random.choices(symbols, nr_symbols)
 # password = le_l + le_n + le_s
 
 # random.shuffle(password)
 # print("".join(password))
 
-#Easy level:
+# # Easy level:
 # password = ""
 
 # for char in range(1, nr_letters+1):
