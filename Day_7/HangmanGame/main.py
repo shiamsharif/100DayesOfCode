@@ -1,4 +1,5 @@
 import random
+import os
 from logo import stages
 from logo import logo
 from wordlist import word_list 
@@ -26,6 +27,8 @@ print(f''.join(display))
 
 while not end_of_game:
     guess = input("\nGuess a letter: ").lower()
+
+    os.system("cls")
 
     #TODO-4: - If the user has entered a letter they've already guessed, print the letter and let them know.
 
