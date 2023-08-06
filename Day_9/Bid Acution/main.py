@@ -27,6 +27,6 @@ while not bidding_finished:
     should_continue = input("Are there any other bidders? type 'yes' or 'no'.\n").lower()
     if should_continue == "no":
         bidding_finished = True
-        find_heighest_bidder(bids)
+        find_heighest_bidder(bids) #called function
     elif should_continue == "yes":
         os.system("cls")  #clear terminal
