@@ -26,6 +26,13 @@ def check_answer(guess, answer, turns):
     else:
         print(f"You got it! The random number was : {answer}")
 
+# Clear screen:
+def clear_screen():
+    # Check the platform and clear the screen accordingly
+    if os.name == 'nt':
+        os.system('cls')  # Windows
+    else:
+        os.system('clear')  # Linux and macOS
 
 #game
 def game():
@@ -52,5 +59,5 @@ def game():
 game()
 
 while input("Do you wanna play game again? Type 'y' or 'n' : ") == "y":
-    os.system("cls")
+    clear_screen()
     game()
