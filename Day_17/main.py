@@ -2,6 +2,7 @@ class User:
     def __init__(self,id,name):
         self.id = id
         self.name = name
+        self.emni = "emni"
 
     def Print(self):
         print(f"My name is {self.name} and id {self.id}")
@@ -9,6 +10,8 @@ class User:
 
 user_1 = User("41220100032", "shiam")
 user_1.Print()
+
+print(user_1.emni)
 
 
 # print(user_1.username)
