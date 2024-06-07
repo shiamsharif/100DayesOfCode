@@ -14,12 +14,12 @@ for question in question_data:
 
 quiz = QuizBrain(question_bank)
 
-i = 0
+iter = 0
 
 while quiz.still_has_questions():
-    i += 1
+    iter += 1
     quiz.next_question()
-    if i == 12:
+    if iter == 12:
         print("You've completed the quiz")
         print(f"Your final score was: {quiz.score}")
 
