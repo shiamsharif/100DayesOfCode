@@ -185,29 +185,29 @@ the_turtle = Turtle()
 #     the_turtle.left(10)
 
 
-"""My code"""
-import turtle 
-turtle.colormode(255)
+"""Angela Yu code"""
+# import turtle 
+# turtle.colormode(255)
 
-def random_color():
-    r = random.randint(0,255)
-    g = random.randint(0,255)
-    b = random.randint(0,255)
-    random_color = (r,g,b)
-    return random_color
-
-
-the_turtle.pensize(1)
-the_turtle.speed("fastest")
+# def random_color():
+#     r = random.randint(0,255)
+#     g = random.randint(0,255)
+#     b = random.randint(0,255)
+#     random_color = (r,g,b)
+#     return random_color
 
 
-def draw(gap):
-    for _ in range(int(360 / gap)):
-        the_turtle.color(random_color())
-        the_turtle.circle(100)
-        the_turtle.setheading(the_turtle.heading() + gap)
+# the_turtle.pensize(1)
+# the_turtle.speed("fastest")
 
-draw(10)
+
+# def draw(gap):
+#     for _ in range(int(360 / gap)):
+#         the_turtle.color(random_color())
+#         the_turtle.circle(100)
+#         the_turtle.setheading(the_turtle.heading() + gap)
+
+# draw(10)
 
 
 
