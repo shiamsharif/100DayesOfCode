@@ -141,6 +141,51 @@ the_turtle = Turtle()
 #     the_turtle.setheading(random.choice(direction))
 
 "Angela Yu Solution"
+# import turtle 
+# turtle.colormode(255)
+
+# def random_color():
+#     r = random.randint(0,255)
+#     g = random.randint(0,255)
+#     b = random.randint(0,255)
+#     random_color = (r,g,b)
+#     return random_color
+
+
+# direction = [0, 90, 180, 270]
+# the_turtle.pensize(15)
+# the_turtle.speed("fastest")
+
+# for _ in range(200):
+#     the_turtle.pencolor(random_color())  
+#     the_turtle.forward(30)
+#     the_turtle.setheading(random.choice(direction))
+ 
+
+"""########### Challenge 6 - Make a Spirograph ########"""
+
+"""My code"""
+# import turtle 
+# turtle.colormode(255)
+
+# def random_color():
+#     r = random.randint(0,255)
+#     g = random.randint(0,255)
+#     b = random.randint(0,255)
+#     random_color = (r,g,b)
+#     return random_color
+
+
+# the_turtle.pensize(1)
+# the_turtle.speed("fastest")
+
+# for _ in range(100):
+#     the_turtle.pencolor(random_color())
+#     the_turtle.circle(100)
+#     the_turtle.left(10)
+
+
+"""My code"""
 import turtle 
 turtle.colormode(255)
 
@@ -152,16 +197,17 @@ def random_color():
     return random_color
 
 
-direction = [0, 90, 180, 270]
-the_turtle.pensize(15)
+the_turtle.pensize(1)
 the_turtle.speed("fastest")
 
-for _ in range(200):
-    the_turtle.pencolor(random_color())  
-    the_turtle.forward(30)
-    the_turtle.setheading(random.choice(direction))
 
+def draw(gap):
+    for _ in range(int(360 / gap)):
+        the_turtle.color(random_color())
+        the_turtle.circle(100)
+        the_turtle.setheading(the_turtle.heading() + gap)
 
+draw(10)
 
 
 
