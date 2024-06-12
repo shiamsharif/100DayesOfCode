@@ -6,7 +6,7 @@ MOVE_DISTANCE = 20
 class Snake:
 
     def __init__(self):
-        self.self.segments = []  
+        self.segments = []  
         self.create_snake()
 
     def create_snake(self):

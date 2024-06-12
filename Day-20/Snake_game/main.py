@@ -11,7 +11,6 @@ screen.tracer(0)
  
 snake = Snake()
 
-
 game_is_on = True  
 while game_is_on:
     screen.update()
@@ -20,7 +19,7 @@ while game_is_on:
     snake.move()
 
  
-    
+screen.exitonclick()
 
 
 
