@@ -17,3 +17,10 @@
  
 # print(temperatures)
 
+
+""" 3 """
+#step 1:  pip install pandas
+import pandas 
+
+date = pandas.read_csv("./002 weather-data.csv")
+print(date)
