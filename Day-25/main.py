@@ -22,5 +22,18 @@
 #step 1:  pip install pandas
 import pandas 
 
-date = pandas.read_csv("./002 weather-data.csv")
-print(date)
+data = pandas.read_csv("./002 weather-data.csv")
+# print(data["temp"]) 
+
+data_dict = data.to_dict()
+print(data_dict)
+
+temp_list = data["temp"].to_list()
+print(len(temp_list))
+
+print(data["temp"].mean())
+print(data["temp"].max())
+
+""" Get Date in columns """
+print(data["condition"])
+print(data.condition)
