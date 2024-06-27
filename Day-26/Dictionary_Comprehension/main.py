@@ -10,4 +10,7 @@
 """ Exercise-1 """
 sentence = "What is the airspeed velocity of an unladen swallow?"
 result = {sentence:len(sentence) for sentence in sentence.split()}
-print(result)
+print(result) 
+
+x = {name:((value * 9 / 5) + 32) for (name, value) in result.items()}
+print(x)
