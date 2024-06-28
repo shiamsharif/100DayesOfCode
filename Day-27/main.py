@@ -1,19 +1,32 @@
-import tkinter
+from tkinter import *
 
-window = tkinter.Tk()
+window = Tk()
 window.title("My First GUI Program")
 window.minsize(width=500, height=300)
 
 
 """ Label """
-my_label = tkinter.Label(text="ShiamSharif", font=("Comic Sans MS", 24, "bold"))
-my_label.pack(side="left")
+my_label = Label(text="ShiamSharif", font=("Comic Sans MS", 24, "bold"))
+my_label.pack()
+
+my_label["text"] = "New Text"
 
 
-# import turtle
+""" Button """
+def clicked():
+    new_text = input.get()
+    my_label.config(text=new_text)
+    print("I got Clicked.")
 
-# tim = turtle.Turtle()
-# tim.write("some text", font=("Comic Sans MS", 24, "bold"))
+button = Button(text="Click me", command=clicked)
+button.pack()
+
+
+""" Entry """
+input = Entry()
+input.pack()
+
+
 
 
 
