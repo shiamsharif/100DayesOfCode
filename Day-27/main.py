@@ -10,13 +10,13 @@ my_label = tkinter.Label(text="ShiamSharif", font=("Comic Sans MS", 24, "bold"))
 my_label.pack(side="left")
 
 
-import turtle
+# import turtle
 
-tim = turtle.Turtle()
-tim.write("some text", font=("Comic Sans MS", 24, "bold"))
-
-
+# tim = turtle.Turtle()
+# tim.write("some text", font=("Comic Sans MS", 24, "bold"))
 
 
+
+ 
 
 window.mainloop()
