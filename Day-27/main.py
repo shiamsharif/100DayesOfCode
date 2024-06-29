@@ -9,10 +9,11 @@ def clicked():
 window = Tk()
 window.title("My First GUI Program")
 window.minsize(width=500, height=300)
-
+window.config(padx=20, pady=20)
 
 """ Label """
 my_label = Label(text="ShiamSharif", font=("Comic Sans MS", 24, "bold"))
+my_label.config(padx=20, pady=20)
 my_label.grid(column=0, row=0)
 
 my_label["text"] = "New Text"
@@ -20,10 +21,12 @@ my_label["text"] = "New Text"
 
 """ Button """
 button = Button(text="Click me", command=clicked)
+button.config(padx=20, pady=20)
 button.grid(column=1, row=1)
 
 """ New Button """
 New_button = Button(text="Press me", command=clicked)
+New_button.config(padx=20, pady=20)
 New_button.grid(column=2, row=0 )
 
 
