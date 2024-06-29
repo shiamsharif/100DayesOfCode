@@ -44,7 +44,7 @@ input.grid(column=3, row=3)
 # print(text.get("1.0", END))
 # text.pack()
 
-# """ Spinbox """
+""" Spinbox """
 # def spinbox_used():
 #     print(spinbox.get())
 
