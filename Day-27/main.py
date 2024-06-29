@@ -38,7 +38,8 @@ text.pack()
 
 """ Spinbox """
 def spinbox_used():
-    
+    print(spinbox.get())
+
  
 
 window.mainloop()
